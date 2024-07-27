@@ -1,0 +1,68 @@
+/*
+ * am1008w_k_i2c.c
+ *
+ *  Created on: Jul 17, 2024
+ *      Author: Yoon
+ */
+#include "am1008w_k_i2c.h"
+
+void AM1008W_K_I2C_Init(AM1008W_K_I2C *sensor, I2C_HandleTypeDef *hi2c) {
+    sensor->hi2c = hi2c;
+}
+
+uint8_t AM1008W_K_I2C_ReadDataCommand(AM1008W_K_I2C *sensor) {
+    uint8_t command[2] = {AM1008W_K_I2C_FRAME_STX, AM1008W_K_I2C_LEN_READ_DATA_COMMAND};
+    HAL_I2C_Master_Transmit(sensor->hi2c, AM1008W_K_I2C_ADDRESS, command, 2, HAL_MAX_DELAY);
+    HAL_Delay(100);
+    return HAL_I2C_Master_Receive(sensor->hi2c, AM1008W_K_I2C_ADDRESS, sensor->buffer, 32, HAL_MAX_DELAY);
+}
+
+uint8_t AM1008W_K_I2C_GetPMOperationMode(AM1008W_K_I2C *sensor) {
+    return sensor->buffer[0]; // 예시로 첫 번째 바이트를 모드로 사용합니다.
+}
+
+uint16_t AM1008W_K_I2C_GetCO2(AM1008W_K_I2C *sensor) {
+    return (sensor->buffer[1] << 8) | sensor->buffer[2]; // 예시로 2, 3번째 바이트를 CO2로 사용합니다.
+}
+
+uint16_t AM1008W_K_I2C_GetVOC(AM1008W_K_I2C *sensor) {
+    return (sensor->buffer[3] << 8) | sensor->buffer[4]; // 예시로 4, 5번째 바이트를 VOC로 사용합니다.
+}
+
+float AM1008W_K_I2C_GetHumidity(AM1008W_K_I2C *sensor) {
+    return ((sensor->buffer[5] << 8) | sensor->buffer[6]) / 10.0; // 예시로 6, 7번째 바이트를 습도로 사용합니다.
+}
+
+float AM1008W_K_I2C_GetTemperature(AM1008W_K_I2C *sensor) {
+    return ((sensor->buffer[7] << 8) | sensor->buffer[8]) / 10.0; // 예시로 8, 9번째 바이트를 온도로 사용합니다.
+}
+
+uint16_t AM1008W_K_I2C_GetPM1P0(AM1008W_K_I2C *sensor) {
+    return (sensor->buffer[9] << 8) | sensor->buffer[10]; // 예시로 10, 11번째 바이트를 PM1.0으로 사용합니다.
+}
+
+uint16_t AM1008W_K_I2C_GetPM2P5(AM1008W_K_I2C *sensor) {
+    return (sensor->buffer[11] << 8) | sensor->buffer[12]; // 예시로 12, 13번째 바이트를 PM2.5로 사용합니다.
+}
+
+uint16_t AM1008W_K_I2C_GetPM10(AM1008W_K_I2C *sensor) {
+    return (sensor->buffer[13] << 8) | sensor->buffer[14]; // 예시로 14, 15번째 바이트를 PM10으로 사용합니다.
+}
+
+uint16_t AM1008W_K_I2C_GetVOCNowRRefR(AM1008W_K_I2C *sensor) {
+    return (sensor->buffer[15] << 8) | sensor->buffer[16]; // 예시로 16, 17번째 바이트를 VOC Now R / Ref R로 사용합니다.
+}
+
+uint16_t AM1008W_K_I2C_GetVOCRefR(AM1008W_K_I2C *sensor) {
+    return (sensor->buffer[17] << 8) | sensor->buffer[18]; // 예시로 18, 19번째 바이트를 VOC Ref R로 사용합니다.
+}
+
+uint16_t AM1008W_K_I2C_GetVOCNowR(AM1008W_K_I2C *sensor) {
+    return (sensor->buffer[19] << 8) | sensor->buffer[20]; // 예시로 20, 21번째 바이트를 VOC Now R로 사용합니다.
+}
+
+am1008w_k_i2c_status AM1008W_K_I2C_GetPMSensorStatusAlarm(AM1008W_K_I2C *sensor) {
+    am1008w_k_i2c_status status;
+    status.value = sensor->buffer[21]; // 예시로 22번째 바이트를 상태 알람으로 사용합니다.
+    return status;
+}

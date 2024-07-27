@@ -1,0 +1,10 @@
+22:44:37 **** Build of configuration Debug for project 20240717_AM1008K ****
+make -j12 all 
+arm-none-eabi-size  20240717_AM1008K.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12452	     92	   2124	  14668	   394c	20240717_AM1008K.elf
+Finished building: default.size.stdout
+ 
+
+22:44:38 Build Finished. 0 errors, 0 warnings. (took 564ms)
+

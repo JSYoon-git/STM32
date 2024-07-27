@@ -1,0 +1,10 @@
+01:21:34 **** Incremental Build of configuration Debug for project AM1008K_I2C ****
+make -j12 all 
+arm-none-eabi-size  AM1008K_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11004	     12	   1796	  12812	   320c	AM1008K_I2C.elf
+Finished building: default.size.stdout
+ 
+
+01:21:35 Build Finished. 0 errors, 0 warnings. (took 510ms)
+

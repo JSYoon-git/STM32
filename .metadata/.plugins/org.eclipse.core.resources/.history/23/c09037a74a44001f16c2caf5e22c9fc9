@@ -1,0 +1,74 @@
+/*
+ * am1008w_k_i2c.h
+ *
+ *  Created on: Jul 17, 2024
+ *      Author: Yoon
+ */
+
+#ifndef SRC_AM1008W_K_I2C_H_
+#define SRC_AM1008W_K_I2C_H_
+
+#include "stm32f1xx_hal.h"
+
+#define AM1008W_K_I2C_ADDRESS 0x28 << 1  // STM32의 HAL 라이브러리는 7비트 주소를 사용합니다.
+#define AM1008W_K_I2C_FRAME_STX 0x16
+#define AM1008W_K_I2C_LEN_READ_DATA_COMMAND 25
+
+#define AM1008W_K_I2C_PSO_CLOSE 0x00
+#define AM1008W_K_I2C_PSO_TIMING_MEASURING_MODE 0x05
+#define AM1008W_K_I2C_PSO_DYNAMIC_MEASURING_MODE 0x06
+#define AM1008W_K_I2C_PSO_CONTINOUS_MEASURING_MODE 0x0C
+#define AM1008W_K_I2C_PSO_SINGLE_MEASURING_MODE 0x0D
+
+#define AM1008W_K_I2C_CTRL_CLOSE_MEASUREMENT 0x01
+#define AM1008W_K_I2C_CTRL_OPEN_MEASUREMENT 0x02
+#define AM1008W_K_I2C_CTRL_CO2_CALIBRATION 0x03
+#define AM1008W_K_I2C_CTRL_SET_UP_TIMING_MEASUREMENT 0x05
+#define AM1008W_K_I2C_CTRL_SET_UP_DYNAMIC_MEASUREMENT 0x06
+#define AM1008W_K_I2C_CTRL_SET_UP_PM_CALIBRATION_COEFFICIENT 0x07
+#define AM1008W_K_I2C_CTRL_SET_UP_CONTINUOUSLY_MEASUREMENT 0x0C
+#define AM1008W_K_I2C_CTRL_SET_UP_SINGLE_MEASUREMENT 0x0D
+
+typedef union {
+    uint8_t value;
+    struct {
+        uint8_t fan_at_high_revolving_speed:1;
+        uint8_t fan_at_low_revolving_speed:1;
+        uint8_t working_temperature_is_high:1;
+        uint8_t working_temperature_is_low:1;
+    } bits;
+} am1008w_k_i2c_status;
+
+typedef struct {
+    I2C_HandleTypeDef *hi2c;
+    uint8_t buffer[32];
+    uint8_t pm_operation_mode;
+    uint16_t co2;
+    uint16_t voc;
+    float humidity;
+    float temperature;
+    uint16_t pm1p0;
+    uint16_t pm2p5;
+    uint16_t pm10;
+    uint16_t voc_now_r_ref_r;
+    uint16_t voc_ref_r;
+    uint16_t voc_now_r;
+    am1008w_k_i2c_status pm_sensor_status_alarm;
+} AM1008W_K_I2C;
+
+void AM1008W_K_I2C_Init(AM1008W_K_I2C *sensor, I2C_HandleTypeDef *hi2c);
+uint8_t AM1008W_K_I2C_ReadDataCommand(AM1008W_K_I2C *sensor);
+uint8_t AM1008W_K_I2C_GetPMOperationMode(AM1008W_K_I2C *sensor);
+uint16_t AM1008W_K_I2C_GetCO2(AM1008W_K_I2C *sensor);
+uint16_t AM1008W_K_I2C_GetVOC(AM1008W_K_I2C *sensor);
+float AM1008W_K_I2C_GetHumidity(AM1008W_K_I2C *sensor);
+float AM1008W_K_I2C_GetTemperature(AM1008W_K_I2C *sensor);
+uint16_t AM1008W_K_I2C_GetPM1P0(AM1008W_K_I2C *sensor);
+uint16_t AM1008W_K_I2C_GetPM2P5(AM1008W_K_I2C *sensor);
+uint16_t AM1008W_K_I2C_GetPM10(AM1008W_K_I2C *sensor);
+uint16_t AM1008W_K_I2C_GetVOCNowRRefR(AM1008W_K_I2C *sensor);
+uint16_t AM1008W_K_I2C_GetVOCRefR(AM1008W_K_I2C *sensor);
+uint16_t AM1008W_K_I2C_GetVOCNowR(AM1008W_K_I2C *sensor);
+am1008w_k_i2c_status AM1008W_K_I2C_GetPMSensorStatusAlarm(AM1008W_K_I2C *sensor);
+
+#endif /* SRC_AM1008W_K_I2C_H_ */

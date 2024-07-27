@@ -1,0 +1,10 @@
+22:45:01 **** Incremental Build of configuration Debug for project AM1008W-K-P_Packet ****
+make -j12 all 
+arm-none-eabi-size  AM1008W-K-P_Packet.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9920	     12	   1820	  11752	   2de8	AM1008W-K-P_Packet.elf
+Finished building: default.size.stdout
+ 
+
+22:45:01 Build Finished. 0 errors, 0 warnings. (took 530ms)
+

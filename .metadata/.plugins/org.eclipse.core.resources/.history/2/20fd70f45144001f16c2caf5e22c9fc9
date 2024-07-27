@@ -1,0 +1,165 @@
+/*
+ * am1008w_k_i2c.c
+ *
+ *  Created on: Jul 17, 2024
+ *      Author: Yoon
+ */
+#include "am1008w_k_i2c.h"
+
+static I2C_HandleTypeDef *mhi2c;
+static uint8_t _buffer[32];
+static uint8_t _pm_operation_mode;
+static uint16_t _co2;
+static uint16_t _voc;
+static float _humidity;
+static float _temperature;
+static uint16_t _pm1p0;
+static uint16_t _pm2p5;
+static uint16_t _pm10;
+static uint16_t _voc_now_r_ref_r;
+static uint16_t _voc_ref_r;
+static uint16_t _voc_now_r;
+static am1008w_k_i2c_status _pm_sensor_status_alarm;
+
+void am1008w_k_i2c_begin(I2C_HandleTypeDef *hi2c) {
+    mhi2c = hi2c;
+}
+
+uint8_t am1008w_k_i2c_send_command_data(uint8_t ctrl, uint16_t data) {
+    uint8_t tx_data[7] = {0};
+    tx_data[0] = AM1008W_K_I2C_FRAME_STX;
+    tx_data[1] = 7; // FRAME LENGTH
+    tx_data[2] = ctrl; // Control Command of the PM Sensor
+    tx_data[3] = (data >> 8) & 0xff; // high byte of data
+    tx_data[4] = data & 0xff; // low byte of data
+    tx_data[5] = 0;
+
+    uint8_t cs = tx_data[0];
+    for (uint8_t i = 1; i < 6; i++) {
+        cs ^= tx_data[i];
+    }
+    tx_data[6] = cs;
+
+    HAL_I2C_Master_Transmit(mhi2c, AM1008W_K_I2C_ADDRESS << 1, tx_data, 7, HAL_MAX_DELAY);
+
+    return 0;
+}
+
+uint8_t am1008w_k_i2c_pm_sensor_mode_close() {
+    return am1008w_k_i2c_send_command_data(AM1008W_K_I2C_CTRL_CLOSE_MEASUREMENT, 0);
+}
+
+uint8_t am1008w_k_i2c_pm_sensor_mode_open() {
+    return am1008w_k_i2c_send_command_data(AM1008W_K_I2C_CTRL_OPEN_MEASUREMENT, 0);
+}
+
+uint8_t am1008w_k_i2c_pm_sensor_mode_single_measurement(uint16_t range) {
+    return am1008w_k_i2c_send_command_data(AM1008W_K_I2C_CTRL_SET_UP_SINGLE_MEASUREMENT, range);
+}
+
+uint8_t am1008w_k_i2c_pm_sensor_mode_continuously_measurement() {
+    return am1008w_k_i2c_send_command_data(AM1008W_K_I2C_CTRL_SET_UP_CONTINUOUSLY_MEASUREMENT, 0);
+}
+
+uint8_t am1008w_k_i2c_pm_sensor_mode_timing_measurement(uint16_t range) {
+    return am1008w_k_i2c_send_command_data(AM1008W_K_I2C_CTRL_SET_UP_TIMING_MEASUREMENT, range);
+}
+
+uint8_t am1008w_k_i2c_pm_sensor_mode_dynamic_measurement() {
+    return am1008w_k_i2c_send_command_data(AM1008W_K_I2C_CTRL_SET_UP_DYNAMIC_MEASUREMENT, 0);
+}
+
+uint8_t am1008w_k_i2c_set_pm_coefficient(uint8_t range) {
+    return am1008w_k_i2c_send_command_data(AM1008W_K_I2C_CTRL_SET_UP_PM_CALIBRATION_COEFFICIENT, range);
+}
+
+uint8_t am1008w_k_i2c_calibrate_co2(uint16_t range) {
+    return am1008w_k_i2c_send_command_data(AM1008W_K_I2C_CTRL_CO2_CALIBRATION, range);
+}
+
+uint8_t am1008w_k_i2c_read_data_command() {
+    HAL_I2C_Master_Receive(mhi2c, AM1008W_K_I2C_ADDRESS << 1, _buffer, 25, HAL_MAX_DELAY);
+
+    uint8_t idx = 0;
+
+    if (_buffer[0] != AM1008W_K_I2C_FRAME_STX) {
+        return 2; // Frame header different
+    }
+
+    if (_buffer[1] != AM1008W_K_I2C_LEN_READ_DATA_COMMAND) {
+        return 3; // Frame length different
+    }
+
+    uint8_t check_code = _buffer[0];
+    for (uint8_t i = 1; i < AM1008W_K_I2C_LEN_READ_DATA_COMMAND - 1; i++) {
+        check_code ^= _buffer[i];
+    }
+
+    if (_buffer[AM1008W_K_I2C_LEN_READ_DATA_COMMAND - 1] != check_code) {
+        return 4; // Checksum wrong
+    }
+
+    _pm_operation_mode = _buffer[2];
+    _co2 = (_buffer[3] << 8) + _buffer[4];
+    _voc = (_buffer[5] << 8) + _buffer[6];
+    _humidity = (float)((_buffer[7] << 8) + _buffer[8]) / 10;
+    _temperature = (float)((_buffer[9] << 8) + _buffer[10] - 500) / 10;
+    _pm1p0 = (_buffer[11] << 8) + _buffer[12];
+    _pm2p5 = (_buffer[13] << 8) + _buffer[14];
+    _pm10 = (_buffer[15] << 8) + _buffer[16];
+    _voc_now_r_ref_r = (_buffer[17] << 8) + _buffer[18];
+    _voc_ref_r = (_buffer[19] << 8) + _buffer[20];
+    _voc_now_r = (_buffer[21] << 8) + _buffer[22];
+    _pm_sensor_status_alarm.value = _buffer[23];
+
+    return 0;
+}
+
+uint8_t am1008w_k_i2c_get_pm_operation_mode() {
+    return _pm_operation_mode;
+}
+
+uint16_t am1008w_k_i2c_get_co2() {
+    return _co2;
+}
+
+uint16_t am1008w_k_i2c_get_voc() {
+    return _voc;
+}
+
+float am1008w_k_i2c_get_humidity() {
+    return _humidity;
+}
+
+float am1008w_k_i2c_get_temperature() {
+    return _temperature;
+}
+
+uint16_t am1008w_k_i2c_get_pm1p0() {
+    return _pm1p0;
+}
+
+uint16_t am1008w_k_i2c_get_pm2p5() {
+    return _pm2p5;
+}
+
+uint16_t am1008w_k_i2c_get_pm10() {
+    return _pm10;
+}
+
+uint16_t am1008w_k_i2c_get_voc_now_r_ref_r() {
+    return _voc_now_r_ref_r;
+}
+
+uint16_t am1008w_k_i2c_get_voc_ref_r() {
+    return _voc_ref_r;
+}
+
+uint16_t am1008w_k_i2c_get_voc_now_r() {
+    return _voc_now_r;
+}
+
+am1008w_k_i2c_status am1008w_k_i2c_get_pm_sensor_status_alarm() {
+    return _pm_sensor_status_alarm;
+}
+

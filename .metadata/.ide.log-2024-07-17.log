@@ -1,0 +1,161 @@
+2024-07-18 00:03:07,189 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:03:07,198 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:03:33,688 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:03:33,688 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:03:33,691 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:03:33,691 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:03:33,694 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:03:33,694 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:03:33,697 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:03:33,697 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:06,613 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:06,613 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:06,613 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:06,613 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:06,625 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-18 00:04:06,636 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:06,636 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:06,639 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:06,639 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:26,036 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 649233096 Bytes (1073741824)
+2024-07-18 00:04:28,158 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 667417664 Bytes (1073741824)
+2024-07-18 00:04:29,882 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 710935616 Bytes (1073741824)
+2024-07-18 00:04:29,950 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-18 00:04:29,950 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-18 00:04:29,950 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-18 00:04:29,950 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-18 00:04:29,950 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-07-18 00:04:29,951 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-18 00:04:29,952 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:29,952 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:04:29,994 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\license.tmp_save
+2024-07-18 00:04:30,062 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\license.tmp
+2024-07-18 00:04:30,093 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\gpio.tmp_save
+2024-07-18 00:04:30,149 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\gpio.tmp
+2024-07-18 00:04:30,191 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_it.c_save
+2024-07-18 00:04:30,298 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_it.c
+2024-07-18 00:04:30,310 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_it.h_save
+2024-07-18 00:04:30,371 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_it.h
+2024-07-18 00:04:30,397 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_hal_msp.c_save
+2024-07-18 00:04:30,486 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_hal_msp.c
+2024-07-18 00:04:30,494 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\system.tmp_save
+2024-07-18 00:04:30,555 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\system.tmp
+2024-07-18 00:04:30,577 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-07-18 00:04:30,643 [INFO] CodeEngine:335 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_hal_conf.h
+2024-07-18 00:04:30,674 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\main.h_save
+2024-07-18 00:04:30,742 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\main.h
+2024-07-18 00:04:30,756 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\main.c_save
+2024-07-18 00:04:30,854 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\main.c
+2024-07-18 00:04:31,253 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 287mS.
+2024-07-18 00:04:31,261 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-18 00:04:31,307 [INFO] ConfigFileManager:1503 - The Die is : DIE410
+2024-07-18 00:04:31,308 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-07-18 00:04:31,311 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-07-18 00:04:31,314 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-07-18 00:04:32,037 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 776mS.
+2024-07-18 00:04:32,038 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-18 00:04:32,046 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-18 00:11:01,718 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:11:01,718 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:11:01,718 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:11:01,718 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:11:01,731 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-18 00:11:01,743 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:11:01,744 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:11:01,746 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:11:01,746 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:11:14,064 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 681362200 Bytes (1073741824)
+2024-07-18 00:11:15,493 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 650216624 Bytes (1073741824)
+2024-07-18 00:11:16,811 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 689536176 Bytes (1073741824)
+2024-07-18 00:11:16,891 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-18 00:11:16,891 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-18 00:11:16,891 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-18 00:11:16,891 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-18 00:11:16,891 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-07-18 00:11:16,892 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-18 00:11:16,893 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:11:16,893 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:11:16,957 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\license.tmp_save
+2024-07-18 00:11:17,023 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\license.tmp
+2024-07-18 00:11:17,043 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\gpio.tmp_save
+2024-07-18 00:11:17,099 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\gpio.tmp
+2024-07-18 00:11:17,165 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_it.c_save
+2024-07-18 00:11:17,264 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_it.c
+2024-07-18 00:11:17,275 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_it.h_save
+2024-07-18 00:11:17,329 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_it.h
+2024-07-18 00:11:17,352 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_hal_msp.c_save
+2024-07-18 00:11:17,430 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_hal_msp.c
+2024-07-18 00:11:17,438 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\system.tmp_save
+2024-07-18 00:11:17,486 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\system.tmp
+2024-07-18 00:11:17,506 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-07-18 00:11:17,569 [INFO] CodeEngine:335 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_hal_conf.h
+2024-07-18 00:11:17,599 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\main.h_save
+2024-07-18 00:11:17,656 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\main.h
+2024-07-18 00:11:17,670 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\main.c_save
+2024-07-18 00:11:17,751 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\main.c
+2024-07-18 00:11:18,109 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 258mS.
+2024-07-18 00:11:18,116 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-18 00:11:18,169 [INFO] ConfigFileManager:1503 - The Die is : DIE410
+2024-07-18 00:11:18,926 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 810mS.
+2024-07-18 00:11:18,927 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-18 00:11:18,933 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-18 00:12:27,199 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:12:27,199 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:12:27,199 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:12:27,199 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:12:27,210 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-18 00:12:27,222 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:12:27,222 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:12:27,225 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:12:27,225 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:13:35,121 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 743254992 Bytes (1073741824)
+2024-07-18 00:13:36,862 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 766323664 Bytes (1073741824)
+2024-07-18 00:13:38,550 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 804598736 Bytes (1073741824)
+2024-07-18 00:13:38,617 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-18 00:13:38,617 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-18 00:13:38,617 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-18 00:13:38,617 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-18 00:13:38,617 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-07-18 00:13:38,618 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-18 00:13:38,619 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:13:38,619 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:13:38,660 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\license.tmp_save
+2024-07-18 00:13:38,713 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\license.tmp
+2024-07-18 00:13:38,735 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\gpio.tmp_save
+2024-07-18 00:13:38,786 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\gpio.tmp
+2024-07-18 00:13:38,823 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_it.c_save
+2024-07-18 00:13:38,880 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_it.c
+2024-07-18 00:13:38,892 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_it.h_save
+2024-07-18 00:13:38,945 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_it.h
+2024-07-18 00:13:38,967 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_hal_msp.c_save
+2024-07-18 00:13:39,039 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\stm32f1xx_hal_msp.c
+2024-07-18 00:13:39,047 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\system.tmp_save
+2024-07-18 00:13:39,100 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\MXTmpFiles\system.tmp
+2024-07-18 00:13:39,120 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-07-18 00:13:39,184 [INFO] CodeEngine:335 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\stm32f1xx_hal_conf.h
+2024-07-18 00:13:39,215 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\main.h_save
+2024-07-18 00:13:39,271 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Inc\main.h
+2024-07-18 00:13:39,285 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\main.c_save
+2024-07-18 00:13:39,370 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\20240717_AM1008K\Core\Src\main.c
+2024-07-18 00:13:39,776 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 296mS.
+2024-07-18 00:13:39,784 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-18 00:13:39,831 [INFO] ConfigFileManager:1503 - The Die is : DIE410
+2024-07-18 00:13:40,510 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 726mS.
+2024-07-18 00:13:40,511 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-18 00:13:40,518 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-18 00:15:54,835 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:15:54,835 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:15:54,837 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:15:54,837 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:15:54,839 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:15:54,839 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:15:54,842 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:15:54,842 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:16:06,696 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:16:06,696 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:16:06,699 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:16:06,699 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:16:06,701 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:16:06,701 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-18 00:16:06,703 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-18 00:16:06,703 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.

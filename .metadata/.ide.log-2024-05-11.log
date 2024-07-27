@@ -1,0 +1,35 @@
+2024-05-12 23:44:34,230 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 333422512 Bytes (660602880)
+2024-05-12 23:44:36,943 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 353122520 Bytes (660602880)
+2024-05-12 23:44:38,770 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 417607896 Bytes (660602880)
+2024-05-12 23:44:38,853 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-05-12 23:44:38,853 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-05-12 23:44:38,854 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-05-12 23:44:38,854 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-05-12 23:44:38,855 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-05-12 23:44:38,942 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\MXTmpFiles\license.tmp_save
+2024-05-12 23:44:39,025 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\MXTmpFiles\license.tmp
+2024-05-12 23:44:39,071 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\MXTmpFiles\gpio.tmp_save
+2024-05-12 23:44:39,134 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\MXTmpFiles\gpio.tmp
+2024-05-12 23:44:39,170 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Src\stm32f1xx_it.c_save
+2024-05-12 23:44:39,306 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Src\stm32f1xx_it.c
+2024-05-12 23:44:39,324 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Inc\stm32f1xx_it.h_save
+2024-05-12 23:44:39,391 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Inc\stm32f1xx_it.h
+2024-05-12 23:44:39,419 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Src\stm32f1xx_hal_msp.c_save
+2024-05-12 23:44:39,515 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Src\stm32f1xx_hal_msp.c
+2024-05-12 23:44:39,527 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\MXTmpFiles\system.tmp_save
+2024-05-12 23:44:39,578 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\MXTmpFiles\system.tmp
+2024-05-12 23:44:39,600 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-05-12 23:44:39,677 [INFO] CodeEngine:335 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Inc\stm32f1xx_hal_conf.h
+2024-05-12 23:44:39,729 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Inc\main.h_save
+2024-05-12 23:44:39,813 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Inc\main.h
+2024-05-12 23:44:39,833 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Src\main.c_save
+2024-05-12 23:44:39,958 [INFO] CodeEngine:279 - Generated code: C:\Users\Yoon\Desktop\Git\STM32\FirstClass\second\Core\Src\main.c
+2024-05-12 23:44:40,301 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 209mS.
+2024-05-12 23:44:40,307 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-05-12 23:44:40,360 [INFO] ConfigFileManager:1503 - The Die is : DIE410
+2024-05-12 23:44:40,367 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-05-12 23:44:40,374 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-05-12 23:44:40,382 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-05-12 23:44:41,284 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 977mS.
+2024-05-12 23:44:41,285 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-05-12 23:44:41,290 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.

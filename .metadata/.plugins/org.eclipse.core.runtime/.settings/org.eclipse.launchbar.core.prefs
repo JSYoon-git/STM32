@@ -1,0 +1,15 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:second Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UARTInterrupt Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AM1008K_K_P_I2C Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:InterruptTest Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:20240717_AM1008K Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AM1008W-K-P_Packet Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:20240717_AM1008K\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:20240717_AM1008K\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AM1008K_I2C\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AM1008K_I2C\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AM1008K_K_P_I2C\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AM1008K_K_P_I2C\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:InterruptTest\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:InterruptTest\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:second\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:second\ Debug/activeLaunchTarget=null\:---
